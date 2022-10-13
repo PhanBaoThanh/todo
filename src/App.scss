@@ -1,0 +1,115 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body{
+  width: 100vw;
+  background-color: hsl(210, 36%, 96%);
+}
+
+.App {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  
+  .todo{
+    width: 50%;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    box-shadow:  0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 32px;
+    margin-top: 128px;
+
+    .alert{
+      color: #721c24;
+      background-color: #f8d7da;
+      border-radius: 8px;
+      height: 20px;
+      line-height: 20px;
+      text-align: center;
+      font-size: 12px;
+      letter-spacing: 4px;
+      text-transform: capitalize;
+      cursor: default;
+      visibility: hidden;
+      margin-bottom: 16px;
+
+      &.success{
+        visibility: visible;
+        color: #155724;
+        background-color: #d4edda;
+      }
+
+      &.danger{
+        visibility: visible;
+        background-color: #f8d7da;
+        color: #721c24;
+      }
+      
+    }
+
+    .header{
+      font-size: 26px;
+      text-align: center;
+      font-weight: 600;
+      color: hsl(205, 86%, 17%);
+      letter-spacing: 3px;
+      margin-bottom: 24px;
+    }
+
+    .input{
+      display: flex;
+      .inputItem{
+        width: 100%;
+        padding: 4px 16px;
+        font-size: 16px;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        border: none;
+        outline: none;
+        background-color: hsl(210, 36%, 96%);
+        color: hsl(210, 22%, 49%);
+
+      }
+
+      .btn{
+        padding: 8px;
+        outline: none;
+        border: none;
+        background-color: hsl(205, 86%, 81%);
+        letter-spacing: 2px;
+        transition: .2s;
+        cursor: pointer;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        &:hover{
+          color: #fff;
+          background-color: #49a6e9;
+        }
+      }
+    }
+
+    .list{
+      margin-top: 32px;
+      display: flex;
+      flex-direction: column;
+      word-break: break-all;
+
+     .clearBtn{
+       text-align: center;
+      p{
+        display: inline-block;
+        color: red;
+        font-size: 16px;
+        cursor: pointer;
+        letter-spacing: 3px;
+      }
+     } 
+    }
+  }
+}
